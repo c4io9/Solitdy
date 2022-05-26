@@ -1,0 +1,79 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_novoNome",
+						"type": "string"
+					}
+				],
+				"name": "atualizarNome",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nome",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Caio Pignatari",
+			"details": "Cuidado primerio contrato desenvolvido ",
+			"kind": "dev",
+			"methods": {},
+			"title": "Contrato teste caio",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"atualizarNome(string)": {
+					"notice": "funcao para atulizar o nome do contrato"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MyTypes.sol": "My"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MyTypes.sol": {
+			"keccak256": "0x5c3557dbc11f4a2aa6eb35ac6c291de3d7f0a00bb38fdb5b586eae0451c0e6b1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8dbc8c99656f609133b18243ed378af106bd538e4188994545e2de5bcbb742a0",
+				"dweb:/ipfs/QmT7fD1J6ofzrTSK4Vejp3uNRNTzbxSZRDL38yMqaCJC5w"
+			]
+		}
+	},
+	"version": 1
+}

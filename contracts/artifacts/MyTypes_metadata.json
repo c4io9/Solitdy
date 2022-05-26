@@ -1,0 +1,48 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"author": "Caio Pignatari",
+			"details": "Cuidado segundo contrato desenvolvido ",
+			"kind": "dev",
+			"methods": {},
+			"title": "Contrato teste caio",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MyTypes.sol": "MyTypes"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MyTypes.sol": {
+			"keccak256": "0xd82f1eb5ae1c7f6e8464b78d5cbdf3a77945d43fcd6753ecaa1e4b02ed00c0fd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://54001f01ad262842187b644fcfad741bafa1fc607e4491ca16de9acd0094253c",
+				"dweb:/ipfs/QmU1NfiUaTg6Hoy7ScvqaC6DwqkBwm8MGKoj4M3NidxdcN"
+			]
+		}
+	},
+	"version": 1
+}
