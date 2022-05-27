@@ -1,0 +1,100 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "example2",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "example_1",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "example_3",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "example_4",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "example_5",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Caio Pignatari",
+			"details": "Cuidado segundo contrato desenvolvido ",
+			"kind": "dev",
+			"methods": {},
+			"title": "Contrato teste caio",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"example2()": {
+					"notice": "Assignment Operators (=, +=, -=, /=, %=)"
+				},
+				"example_1()": {
+					"notice": "Arithmetic Operators (+, -, *, /, %, ++, --)"
+				},
+				"example_3()": {
+					"notice": "Comparison Operators (==, !=, <, <=, >,>=)"
+				},
+				"example_4()": {
+					"notice": "Logical Operators (!, &&, ||)"
+				},
+				"example_5()": {
+					"notice": "Conditional Operators (? A:B)"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MyOperators.sol": "MyOperators"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MyOperators.sol": {
+			"keccak256": "0xa8b5dfea2e897626d5828d4260031d4898100a55637c9adb2da98448fbad8ee6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://473d700d3a9816a2940d0ad4b96711314c9d0279de166d249f3d11534b28d2ad",
+				"dweb:/ipfs/QmT2xe3SXKmVW8DYnY64LVc4H4D1b272z8Ro8WRMUUmQF1"
+			]
+		}
+	},
+	"version": 1
+}

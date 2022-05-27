@@ -1,0 +1,530 @@
+{
+	"id": "6d49f44a122588f828e4cb2afec80bf7",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/MyVariables.sol": {
+				"content": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.8.7;\n\n/// @title Contrato teste caio\n/// @author Caio Pignatari\n/// @dev Cuidado segundo contrato desenvolvido \n// contrato para demonstrar os tipos de variaveis\n\ncontract MyVariables {\n    uint256 number = 20;\n    bool paused = true;\n\n\n\n\n\n\n \n    \n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": true,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/MyVariables.sol": {
+				"MyVariables": {
+					"abi": [],
+					"devdoc": {
+						"author": "Caio Pignatari",
+						"details": "Cuidado segundo contrato desenvolvido ",
+						"kind": "dev",
+						"methods": {},
+						"title": "Contrato teste caio",
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/MyVariables.sol\":214:300  contract MyVariables {... */\n  mstore(0x40, 0x80)\n    /* \"contracts/MyVariables.sol\":258:260  20 */\n  0x14\n    /* \"contracts/MyVariables.sol\":241:260  uint256 number = 20 */\n  0x00\n  sstore\n    /* \"contracts/MyVariables.sol\":280:284  true */\n  0x01\n    /* \"contracts/MyVariables.sol\":266:284  bool paused = true */\n  dup1\n  sload\n  not(0xff)\n  and\n  dup2\n  or\n  swap1\n  sstore\n    /* \"contracts/MyVariables.sol\":214:300  contract MyVariables {... */\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/MyVariables.sol\":214:300  contract MyVariables {... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa26469706673582212200ae2a8ff380c443daf74d681b570c020ef7c160875be6a0842cfa289dd3a562e64736f6c63430008070033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "608060405260146000556001805460ff191681179055348015602057600080fd5b50603f80602e6000396000f3fe6080604052600080fdfea26469706673582212200ae2a8ff380c443daf74d681b570c020ef7c160875be6a0842cfa289dd3a562e64736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x14 PUSH1 0x0 SSTORE PUSH1 0x1 DUP1 SLOAD PUSH1 0xFF NOT AND DUP2 OR SWAP1 SSTORE CALLVALUE DUP1 ISZERO PUSH1 0x20 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x2E PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 EXP 0xE2 0xA8 SELFDESTRUCT CODESIZE 0xC DIFFICULTY RETURNDATASIZE 0xAF PUSH21 0xD681B570C020EF7C160875BE6A0842CFA289DD3A56 0x2E PUSH5 0x736F6C6343 STOP ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "214:86:0:-:0;;;258:2;241:19;;280:4;266:18;;-1:-1:-1;;266:18:0;;;;;214:86;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea26469706673582212200ae2a8ff380c443daf74d681b570c020ef7c160875be6a0842cfa289dd3a562e64736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 EXP 0xE2 0xA8 SELFDESTRUCT CODESIZE 0xC DIFFICULTY RETURNDATASIZE 0xAF PUSH21 0xD681B570C020EF7C160875BE6A0842CFA289DD3A56 0x2E PUSH5 0x736F6C6343 STOP ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "214:86:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "46396",
+								"totalCost": "58996"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 258,
+									"end": 260,
+									"name": "PUSH",
+									"source": 0,
+									"value": "14"
+								},
+								{
+									"begin": 241,
+									"end": 260,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 241,
+									"end": 260,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 280,
+									"end": 284,
+									"name": "PUSH",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 266,
+									"end": 284,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 266,
+									"end": 284,
+									"name": "SLOAD",
+									"source": 0
+								},
+								{
+									"begin": -1,
+									"end": -1,
+									"name": "PUSH",
+									"source": -1,
+									"value": "FF"
+								},
+								{
+									"begin": -1,
+									"end": -1,
+									"name": "NOT",
+									"source": -1
+								},
+								{
+									"begin": 266,
+									"end": 284,
+									"name": "AND",
+									"source": 0
+								},
+								{
+									"begin": 266,
+									"end": 284,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 266,
+									"end": 284,
+									"name": "OR",
+									"source": 0
+								},
+								{
+									"begin": 266,
+									"end": 284,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 266,
+									"end": 284,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 214,
+									"end": 300,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212200ae2a8ff380c443daf74d681b570c020ef7c160875be6a0842cfa289dd3a562e64736f6c63430008070033",
+									".code": [
+										{
+											"begin": 214,
+											"end": 300,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 214,
+											"end": 300,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 214,
+											"end": 300,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 214,
+											"end": 300,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 214,
+											"end": 300,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 214,
+											"end": 300,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Caio Pignatari\",\"details\":\"Cuidado segundo contrato desenvolvido \",\"kind\":\"dev\",\"methods\":{},\"title\":\"Contrato teste caio\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/MyVariables.sol\":\"MyVariables\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/MyVariables.sol\":{\"keccak256\":\"0x6d36ab1519033b3d8185f61e77836dc9d2a5ad1e2f678794d5668678a2223d9a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://96a4bd6d0b90d658efd14ff74c07b724dd02c5259680a4f54c6a288eea01d57e\",\"dweb:/ipfs/QmcijDenDShYQ4ah25VQmXe5w9dNArjVkSUihoKGvTWbHc\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 5,
+								"contract": "contracts/MyVariables.sol:MyVariables",
+								"label": "number",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_uint256"
+							},
+							{
+								"astId": 8,
+								"contract": "contracts/MyVariables.sol:MyVariables",
+								"label": "paused",
+								"offset": 0,
+								"slot": "1",
+								"type": "t_bool"
+							}
+						],
+						"types": {
+							"t_bool": {
+								"encoding": "inplace",
+								"label": "bool",
+								"numberOfBytes": "1"
+							},
+							"t_uint256": {
+								"encoding": "inplace",
+								"label": "uint256",
+								"numberOfBytes": "32"
+							}
+						}
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/MyVariables.sol": {
+				"ast": {
+					"absolutePath": "contracts/MyVariables.sol",
+					"exportedSymbols": {
+						"MyVariables": [
+							9
+						]
+					},
+					"id": 10,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"0.8",
+								".7"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:22:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": {
+								"id": 2,
+								"nodeType": "StructuredDocumentation",
+								"src": "57:106:0",
+								"text": "@title Contrato teste caio\n @author Caio Pignatari\n @dev Cuidado segundo contrato desenvolvido "
+							},
+							"fullyImplemented": true,
+							"id": 9,
+							"linearizedBaseContracts": [
+								9
+							],
+							"name": "MyVariables",
+							"nameLocation": "223:11:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 5,
+									"mutability": "mutable",
+									"name": "number",
+									"nameLocation": "249:6:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 9,
+									"src": "241:19:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 3,
+										"name": "uint256",
+										"nodeType": "ElementaryTypeName",
+										"src": "241:7:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"value": {
+										"hexValue": "3230",
+										"id": 4,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"kind": "number",
+										"lValueRequested": false,
+										"nodeType": "Literal",
+										"src": "258:2:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_rational_20_by_1",
+											"typeString": "int_const 20"
+										},
+										"value": "20"
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 8,
+									"mutability": "mutable",
+									"name": "paused",
+									"nameLocation": "271:6:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 9,
+									"src": "266:18:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_bool",
+										"typeString": "bool"
+									},
+									"typeName": {
+										"id": 6,
+										"name": "bool",
+										"nodeType": "ElementaryTypeName",
+										"src": "266:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_bool",
+											"typeString": "bool"
+										}
+									},
+									"value": {
+										"hexValue": "74727565",
+										"id": 7,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"kind": "bool",
+										"lValueRequested": false,
+										"nodeType": "Literal",
+										"src": "280:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_bool",
+											"typeString": "bool"
+										},
+										"value": "true"
+									},
+									"visibility": "internal"
+								}
+							],
+							"scope": 10,
+							"src": "214:86:0",
+							"usedErrors": []
+						}
+					],
+					"src": "33:267:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

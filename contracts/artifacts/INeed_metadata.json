@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "myFunc",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "time",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MyVariables.sol": "INeed"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MyVariables.sol": {
+			"keccak256": "0xb63569ffa218e5a3d8dcc7069f7759339abbba843d6779c6a083f5463567611a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9253885decde95bb226cf7c758363a493bcb79b2ebed6ad18f07ff83e9181db6",
+				"dweb:/ipfs/Qme47wcTTYCzHrH5EkXb16JN91KSaN1urYTqRfMSdK9gBo"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "myFunc",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "number",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Caio Pignatari",
+			"details": "Cuidado segundo contrato desenvolvido ",
+			"kind": "dev",
+			"methods": {},
+			"title": "Contrato teste caio",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MyVariables.sol": "MyVariables"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MyVariables.sol": {
+			"keccak256": "0xf517cd8dc898e467153afe2483f6686483ca2759153492cc8f12fe96178ca3cd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://55edfcc2f4a37703b983df1ef95b4a2f0d2f0188e0755524927ea298b57e5760",
+				"dweb:/ipfs/QmX8yiAxV9Gsk6tudYjGspppnzdhUn7pk6tANmwttkxBcs"
+			]
+		}
+	},
+	"version": 1
+}
